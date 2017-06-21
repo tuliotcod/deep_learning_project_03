@@ -12506,7 +12506,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_batches</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">):</span>
@@ -12525,7 +12525,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
     <span class="n">b1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">int_text</span><span class="p">[</span> <span class="p">:</span> <span class="n">end</span><span class="p">])</span>
     <span class="n">b2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">int_text</span><span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="n">end</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
 
-    <span class="n">b2</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">b1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">b2</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">b2</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">b1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     
     <span class="n">b1</span> <span class="o">=</span> <span class="n">b1</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">b2</span> <span class="o">=</span> <span class="n">b2</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
